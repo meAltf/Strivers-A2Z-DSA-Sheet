@@ -2,6 +2,7 @@ public class Solution {
     public static int dataTypes(String type) {
         // Write your code here
         // One more way to do it..
+
         if (type.equals("Character"))
             return 1;
         else if (type.equals("Integer") || type.equals("Float"))
