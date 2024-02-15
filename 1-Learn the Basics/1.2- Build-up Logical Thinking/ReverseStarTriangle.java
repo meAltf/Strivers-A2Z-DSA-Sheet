@@ -1,5 +1,5 @@
 public class Solution {
-    public static void nStarTriangle(int n) {
+    public static void nStarReverseTriangle(int n) {
         // Write your code here
 
         for (int i = 0; i < n; i++) {
