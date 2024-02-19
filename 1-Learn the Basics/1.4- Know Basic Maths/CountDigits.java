@@ -1,4 +1,4 @@
-//Approach-1
+//Approach-1 || time complexity - O(log(n))
 public class Solution {
     public static int countDigits(int n) {
         // Write your code here.
