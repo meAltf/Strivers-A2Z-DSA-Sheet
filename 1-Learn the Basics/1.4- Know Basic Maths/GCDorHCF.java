@@ -25,6 +25,21 @@ public class Solution {
      * it is should be divided by (a-b) and b as well.
      */
     public static int calcGCD(int n, int m) {
-        if(m==0) return n;
-        return calcGCD(m, n%m);
+        if (m == 0)
+            return n;
+        return calcGCD(m, n % m);
+    }
+
+    // Iterate through behind and use break statement once find the GCD/HCF
+    public static int calcGCD(int n, int m) {
+        int ans = 1;
+        int min = Math.min(n, m);
+        for (int i = min; i >= 0; i--) {
+            if (n % i == 0 && m % i == 0) {
+                ans = i;
+                break;
+            }
+        }
+        return ans;
+    }
 }
